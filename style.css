@@ -1,0 +1,98 @@
+body {
+  background-color: #f0f0f0; /* Couleur de fond plus claire */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #d9d9d9; /* Couleur de la calculatrice en gris */
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+.display {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #cccccc; /* Couleur du champ de saisie en gris */
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#input {
+  width: 250px;
+  height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  padding: 5px 10px;
+  border-radius: 5px; /* Ajouter une bordure arrondie */
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #333; /* Couleur du texte plus foncée */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Style des boutons */
+.input-button {
+  background-color: #ccc; /* Couleur de base des touches en gris clair */
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #333; /* Texte légèrement plus foncé */
+  transition: background-color 0.3s;
+}
+
+.input-button:hover {
+  background-color: #ddd; /* Gris légèrement plus clair au survol */
+}
+
+#equal {
+  grid-column: 4; /* Aligner à la quatrième colonne */
+  grid-row: span 2; /* Étendre sur deux lignes */
+  background-color: #007bff; /* Bleu vif pour le bouton égal */
+  height: 130px; /* Modifier la hauteur */
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#equal:hover {
+  background-color: #0056b3; /* Bleu légèrement plus foncé au survol */
+}
+
+.input-button[value="."] {
+  grid-column: span 2; /* Étendre sur deux colonnes */
+  font-weight: bold;
+}
+
+#clear {
+  background-color: #ff4d4d; 
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#clear:hover {
+  background-color: #f37878; 
+}
+
+#erase {
+  background-color: #ffad99;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#erase:hover {
+  background-color: #f4bcae;
+}
